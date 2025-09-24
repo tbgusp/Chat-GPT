@@ -3,17 +3,33 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Us – Urbahn Architects</title>
+    <title>About Us – Nusantara EcoSphere</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Source+Sans+Pro:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
   </head>
   <body>
     <header class="site-header">
       <div class="container header-inner">
-        <a class="brand" href="#" aria-label="Urbahn Architects home">
-          <span class="brand-mark">U</span>
-          <span class="brand-name">Urbahn Architects</span>
+        <a class="brand" href="#" aria-label="Nusantara EcoSphere home">
+          <span class="brand-mark">N</span>
+          <span class="brand-name">Nusantara EcoSphere</span>
         </a>
-        <nav class="primary-nav" aria-label="Primary">
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="primary-navigation"
+        >
+          <span class="menu-icon" aria-hidden="true"></span>
+          <span class="menu-label">Menu</span>
+        </button>
+        <nav class="primary-nav" id="primary-navigation" aria-label="Primary">
           <ul class="nav-list">
             <li><a href="#">Home</a></li>
             <li><a href="#about">About</a></li>
@@ -21,174 +37,170 @@
             <li class="has-submenu">
               <a href="#projects" aria-haspopup="true">Projects</a>
               <ul class="submenu" aria-label="Project categories">
-                <li><a href="#">Higher Education</a></li>
-                <li><a href="#">K-12</a></li>
-                <li><a href="#">Healthcare</a></li>
-                <li><a href="#">Transit</a></li>
-                <li><a href="#">Civic &amp; Justice</a></li>
-                <li><a href="#">Aviation</a></li>
+                <li><a href="#projects" data-filter="all">Semua Inisiatif</a></li>
+                <li><a href="#projects" data-filter="coastal">Pengelolaan Pesisir</a></li>
+                <li><a href="#projects" data-filter="industrial">Industri &amp; Energi</a></li>
+                <li><a href="#projects" data-filter="infrastructure">Infrastruktur Maritim</a></li>
+                <li><a href="#projects" data-filter="urban">Kawasan Perkotaan</a></li>
               </ul>
             </li>
             <li><a href="#news">News</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
-        <form class="search-form" role="search">
-          <label class="sr-only" for="search-field">Search for:</label>
-          <input
-            id="search-field"
-            type="search"
-            name="search"
-            placeholder="Search"
-            aria-label="Search for"
-          />
-          <button type="submit">Search</button>
-        </form>
+        <a
+          class="whatsapp-button"
+          href="https://wa.me/6281288553348"
+          target="_blank"
+          rel="noopener"
+        >
+          Hubungi via WhatsApp
+        </a>
       </div>
     </header>
 
     <section class="hero" aria-labelledby="page-title">
       <div class="container hero-content">
-        <p class="eyebrow">Since 1945</p>
-        <h1 id="page-title">About Us – Urbahn Architects</h1>
+        <p class="eyebrow">Sejak 2005</p>
+        <h1 id="page-title">About Us – Nusantara EcoSphere</h1>
         <p>
-          Urbahn Architects is a New York-based architectural practice with offices
-          throughout the region, dedicated to shaping resilient, people-first public
-          environments. For nearly eight decades, our team has partnered with civic,
-          educational, transportation, and healthcare leaders to create transformative
-          spaces that serve communities across the globe.
+          Nusantara EcoSphere adalah konsultan perizinan lingkungan terpadu yang
+          berbasis di Batam, membantu pemangku kepentingan publik dan swasta
+          menavigasi kebijakan kelautan, tata ruang pesisir, dan ketentuan
+          keberlanjutan nasional. Kami merancang strategi pengelolaan lingkungan
+          yang menyatukan keunggulan teknis dengan pemahaman sosial-ekologis
+          Nusantara.
         </p>
-        <a class="cta" href="#history">View Our History</a>
+        <a class="cta" href="#history">Telusuri Sejarah Kami</a>
       </div>
     </section>
 
     <main id="about">
-      <section class="container intro">
+      <section class="container intro reveal">
         <p>
-          Founded in 1945, Urbahn Architects has grown from a local New York City
-          studio into an award-winning firm operating across the United States and
-          internationally. Our portfolio spans more than 40 million square feet of
-          built work, from state-of-the-art university campuses and transit hubs to
-          mission-critical healthcare facilities and community-focused civic spaces.
+          Berdiri pada 2005, Nusantara EcoSphere tumbuh dari prakarsa lokal menjadi
+          mitra strategis lintas provinsi untuk pengelolaan wilayah pesisir dan laut.
+          Tim ahli kami memadukan kajian ilmiah, pemetaan spasial, dan koordinasi
+          kelembagaan untuk memastikan setiap izin dan persetujuan lingkungan
+          berjalan tepat waktu serta patuh regulasi.
         </p>
         <p>
-          Our practice embraces an inclusive, research-driven process that connects
-          design excellence with operational performance. We prioritize equity,
-          sustainability, and long-term value, ensuring that every project is rooted
-          in the aspirations of the people it serves.
+          Kami percaya bahwa kepastian hukum lingkungan adalah fondasi ekonomi
+          biru Indonesia. Melalui kolaborasi intensif dengan pemerintah daerah,
+          pelaku industri, dan komunitas, kami menghadirkan solusi adaptif yang
+          menjaga keseimbangan ekosistem sekaligus membuka peluang investasi.
         </p>
       </section>
 
       <section class="stats" aria-label="Firm highlights">
-        <div class="container stats-grid">
+        <div class="container stats-grid reveal">
           <article class="stat">
-            <p class="stat-value">1945</p>
-            <p class="stat-label">Year Founded</p>
+            <p class="stat-value">2005</p>
+            <p class="stat-label">Tahun Berdiri</p>
           </article>
           <article class="stat">
-            <p class="stat-value">40M+</p>
-            <p class="stat-label">Square Feet Designed</p>
+            <p class="stat-value">150+</p>
+            <p class="stat-label">Izin PKKPRL Difasilitasi</p>
           </article>
           <article class="stat">
-            <p class="stat-value">500+</p>
-            <p class="stat-label">Public Projects Completed</p>
+            <p class="stat-value">95%</p>
+            <p class="stat-label">Tingkat Kepatuhan Regulasi</p>
           </article>
           <article class="stat">
-            <p class="stat-value">3</p>
-            <p class="stat-label">Global Offices</p>
+            <p class="stat-value">30+</p>
+            <p class="stat-label">Tenaga Ahli Bersertifikat</p>
           </article>
         </div>
       </section>
 
-      <section class="container philosophy">
-        <article>
+      <section class="container philosophy reveal">
+        <article class="philosophy-card">
           <h2>Shaping Public Realms</h2>
           <p>
-            We design vibrant, accessible public spaces that encourage interaction and
-            support the civic mission of the institutions we serve. Our approach blends
-            contextual sensitivity with bold gestures that elevate the human
-            experience.
+            Kami merancang kawasan publik pesisir yang berdaya guna dan inklusif,
+            mendorong interaksi warga sekaligus mendukung misi pelayanan publik.
+            Setiap rekomendasi ruang kami selaraskan dengan karakter ekologi dan
+            budaya maritim setempat.
           </p>
         </article>
-        <article>
+        <article class="philosophy-card">
           <h2>Architecture as a Catalyst</h2>
           <p>
-            Each project is an opportunity to catalyze positive change. By integrating
-            resilient systems, equitable design strategies, and dynamic programming, we
-            create environments that empower communities well into the future.
+            Setiap proyek menjadi katalis perubahan positif. Dengan memadukan
+            sistem ketahanan iklim, strategi desain berkeadilan, dan program dinamis,
+            kami hadirkan lingkungan binaan yang memperkuat komunitas dalam jangka
+            panjang.
           </p>
         </article>
-        <article>
+        <article class="philosophy-card">
           <h2>Collaborative Design Process</h2>
           <p>
-            Our interdisciplinary team partners closely with clients, stakeholders, and
-            consultants. Through transparent communication, iterative prototyping, and
-            immersive visualization, we deliver solutions tailored to complex program
-            needs.
+            Tim lintas disiplin kami bekerja erat dengan klien, pemangku
+            kepentingan, dan mitra teknis. Melalui komunikasi transparan dan
+            prototyping iteratif, kami menyesuaikan solusi terhadap kebutuhan program
+            yang kompleks.
           </p>
         </article>
       </section>
 
-      <section class="services" aria-labelledby="services-title">
+      <section class="services reveal" aria-labelledby="services-title">
         <div class="container">
-          <h2 id="services-title">Our Services</h2>
+          <h2 id="services-title">Layanan Perizinan Terpadu</h2>
           <p>
-            From feasibility studies and master planning to full-service architectural
-            design, interior environments, and construction administration, our team
-            provides integrated services that guide projects from vision to occupancy.
+            Nusantara EcoSphere mendampingi proses perizinan dari kajian awal hingga
+            penerbitan dokumen final, dengan dukungan tim legal dan teknis yang
+            berpengalaman di ranah kelautan, pesisir, dan lingkungan strategis.
           </p>
           <ul class="service-list">
-            <li>Architecture &amp; Planning</li>
-            <li>Interior Design</li>
-            <li>Program Management</li>
-            <li>Building Information Modeling (BIM)</li>
-            <li>Historic Preservation</li>
-            <li>Sustainability Consulting</li>
+            <li>Penyusunan &amp; Pengajuan PKKPRL</li>
+            <li>Perizinan Izin Reklamasi Wilayah Pesisir</li>
+            <li>Persetujuan Lingkungan AMDAL &amp; UKL-UPL</li>
+            <li>Pengurusan Persetujuan Bangunan Gedung (PBG)</li>
           </ul>
         </div>
       </section>
 
       <section class="team" id="team" aria-labelledby="team-title">
-        <div class="container">
-          <h2 id="team-title">Our Team</h2>
+        <div class="container reveal">
+          <h2 id="team-title">Tim Inti Kami</h2>
           <p>
-            Urbahn is led by a diverse group of principals, associates, and subject
-            matter experts who bring decades of experience across building typologies.
+            Para konsultan bersertifikat kami memimpin penataan strategi kelautan,
+            lingkungan, dan tata ruang pesisir yang berkelanjutan.
           </p>
           <div class="team-grid">
             <article class="team-card">
-              <h3>Donald Henry, AIA</h3>
-              <p>Managing Principal</p>
+              <h3>Rahayu Prameswari</h3>
+              <p>Direktur Strategi Lingkungan</p>
               <p>
-                Donald champions long-term client partnerships and leads Urbahn's
-                strategic vision across civic and transportation projects.
+                Spesialis AMDAL dengan pengalaman 15 tahun yang mengawal percepatan
+                perizinan sektor energi terbarukan di Kepulauan Riau.
               </p>
               <a class="read-more" href="#">Read more</a>
             </article>
             <article class="team-card">
-              <h3>Gail Kutcher, RA</h3>
-              <p>Principal</p>
+              <h3>Hafiz Pratama</h3>
+              <p>Kepala Integrasi Data Spasial</p>
               <p>
-                Gail specializes in higher-education environments, translating complex
-                program requirements into adaptable, student-centered spaces.
+                Memimpin pemodelan bathimetri dan analisis GIS untuk memastikan
+                kesesuaian ruang laut pada seluruh pengajuan PKKPRL klien.
               </p>
               <a class="read-more" href="#">Read more</a>
             </article>
             <article class="team-card">
-              <h3>Charles Quigley, AIA</h3>
-              <p>Principal</p>
+              <h3>Dina Khalida</h3>
+              <p>Lead Compliance Advocate</p>
               <p>
-                Charles leads healthcare design initiatives, integrating evidence-based
-                strategies that advance patient and provider well-being.
+                Mengorkestrasi koordinasi antar instansi dan memonitor tindak lanjut
+                rekomendasi teknis hingga penerbitan dokumen final.
               </p>
               <a class="read-more" href="#">Read more</a>
             </article>
             <article class="team-card">
-              <h3>Anna Rodriguez</h3>
-              <p>Associate</p>
+              <h3>Agus Wicaksana</h3>
+              <p>Senior Coastal Engineer</p>
               <p>
-                Anna guides interdisciplinary teams through collaborative design sprints
-                and digital delivery workflows.
+                Fokus pada desain reklamasi adaptif dan mitigasi abrasi untuk kawasan
+                industri dan pemukiman pesisir Nusantara.
               </p>
               <a class="read-more" href="#">Read more</a>
             </article>
@@ -196,25 +208,261 @@
         </div>
       </section>
 
-      <section class="history" id="history" aria-labelledby="history-title">
+      <section class="history reveal" id="history" aria-labelledby="history-title">
         <div class="container history-inner">
           <div>
-            <h2 id="history-title">View Our History</h2>
+            <h2 id="history-title">Sejarah Perjalanan</h2>
             <p>
-              Explore a detailed timeline of milestones, landmark projects, and the
-              leaders who shaped Urbahn Architects into the practice it is today.
+              Ikuti tonggak perjalanan kami dari konsultansi lokal menjadi mitra
+              nasional yang dipercaya dalam penataan ruang laut dan pengelolaan
+              lingkungan strategis.
             </p>
           </div>
-          <a class="cta secondary" href="#">Explore timeline</a>
+          <a class="cta secondary" href="#timeline">Lihat Linimasa</a>
+        </div>
+      </section>
+      <div id="timeline" class="sr-only" aria-hidden="true"></div>
+
+      <section
+        class="projects reveal"
+        id="projects"
+        aria-labelledby="projects-title"
+      >
+        <div class="container">
+          <div class="projects-header">
+            <h2 id="projects-title">Portofolio Proyek</h2>
+            <div class="filter-group" role="group" aria-label="Filter proyek">
+              <button class="filter-button active" data-filter="all">Semua</button>
+              <button class="filter-button" data-filter="coastal">Pengelolaan Pesisir</button>
+              <button class="filter-button" data-filter="industrial">Industri &amp; Energi</button>
+              <button class="filter-button" data-filter="infrastructure">Infrastruktur Maritim</button>
+              <button class="filter-button" data-filter="urban">Kawasan Perkotaan</button>
+            </div>
+          </div>
+          <div class="project-grid">
+            <article class="project-card" data-category="coastal">
+              <h3>Masterplan Zonasi Laut Bintan</h3>
+              <p>
+                Penyusunan PKKPRL terpadu untuk kawasan wisata bahari Bintan dengan
+                pendekatan mitigasi abrasi dan konservasi lamun.
+              </p>
+            </article>
+            <article class="project-card" data-category="industrial">
+              <h3>AMDAL Kawasan Industri Tanjung Sauh</h3>
+              <p>
+                Kajian dampak lingkungan dan perizinan reklamasi untuk perluasan
+                pelabuhan logistik terintegrasi Batam.
+              </p>
+            </article>
+            <article class="project-card" data-category="infrastructure">
+              <h3>Persetujuan Pembangunan Dermaga Hijau</h3>
+              <p>
+                Penyusunan dokumen teknis dan koordinasi izin PBG dermaga energi
+                terbarukan dengan material rendah emisi.
+              </p>
+            </article>
+            <article class="project-card" data-category="urban">
+              <h3>Revitalisasi Pesisir Kota Tua Makassar</h3>
+              <p>
+                Integrasi desain ruang publik adaptif dengan studi UKL-UPL untuk
+                meningkatkan ketahanan banjir rob kawasan heritage.
+              </p>
+            </article>
+            <article class="project-card" data-category="coastal">
+              <h3>Rencana Rehabilitasi Mangrove Karimun</h3>
+              <p>
+                Program restorasi kawasan mangrove dengan pembiayaan campuran CSR dan
+                dana pemerintah daerah.
+              </p>
+            </article>
+            <article class="project-card" data-category="industrial">
+              <h3>Audit Lingkungan Pembangkit Surya Laut</h3>
+              <p>
+                Evaluasi kepatuhan multi-sumber dan penyusunan rekomendasi adaptif
+                untuk fasilitas energi apung berkapasitas 40 MWp.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="news" id="news" aria-labelledby="news-title">
+        <div class="container reveal">
+          <h2 id="news-title">Berita &amp; Pembaruan</h2>
+          <div class="news-grid">
+            <article class="news-card">
+              <time datetime="2024-05-18">18 Mei 2024</time>
+              <h3>Pedoman PKKPRL Terbaru untuk Kawasan Strategis Nasional</h3>
+              <p>
+                Kami memandu klien memahami revisi kebijakan kelautan terbaru yang
+                menekankan mitigasi perubahan iklim dan partisipasi masyarakat.
+              </p>
+              <a class="read-more" href="#">Selengkapnya</a>
+            </article>
+            <article class="news-card">
+              <time datetime="2024-04-02">2 April 2024</time>
+              <h3>Ekspedisi Data Laut Dalam Kepulauan Riau</h3>
+              <p>
+                Tim pemetaan kami menggunakan teknologi multibeam untuk memperbarui
+                basis data bathimetri sebagai dasar perencanaan reklamasi.
+              </p>
+              <a class="read-more" href="#">Selengkapnya</a>
+            </article>
+            <article class="news-card">
+              <time datetime="2024-02-21">21 Februari 2024</time>
+              <h3>Lokakarya Percepatan PBG Ramah Lingkungan</h3>
+              <p>
+                Nusantara EcoSphere menghadirkan panduan praktis penerapan material
+                rendah karbon untuk pembangunan pesisir yang adaptif.
+              </p>
+              <a class="read-more" href="#">Selengkapnya</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact" id="contact" aria-labelledby="contact-title">
+        <div class="container contact-layout reveal">
+          <div>
+            <h2 id="contact-title">Hubungi Kami</h2>
+            <p>
+              Siap mendampingi pengurusan PKKPRL, izin reklamasi, dan dokumen
+              lingkungan Anda. Kirimkan kebutuhan Anda, kami akan merespons dalam 1x24
+              jam kerja.
+            </p>
+            <dl class="contact-details">
+              <div>
+                <dt>Kantor</dt>
+                <dd>Batam, Kepulauan Riau</dd>
+              </div>
+              <div>
+                <dt>Telepon</dt>
+                <dd><a href="tel:+6281288553348">+62 812-8855-3348</a></dd>
+              </div>
+              <div>
+                <dt>Email</dt>
+                <dd><a href="mailto:hello@nusantaraecosphere.id">hello@nusantaraecosphere.id</a></dd>
+              </div>
+            </dl>
+          </div>
+          <form class="contact-form" novalidate>
+            <div class="form-field">
+              <label for="name">Nama Lengkap</label>
+              <input id="name" name="name" type="text" required />
+              <p class="error-message" data-for="name"></p>
+            </div>
+            <div class="form-field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" required />
+              <p class="error-message" data-for="email"></p>
+            </div>
+            <div class="form-field">
+              <label for="organization">Perusahaan / Instansi</label>
+              <input id="organization" name="organization" type="text" />
+            </div>
+            <div class="form-field">
+              <label for="service">Jenis Layanan</label>
+              <select id="service" name="service" required>
+                <option value="">Pilih layanan</option>
+                <option value="pkkprl">PKKPRL</option>
+                <option value="reklamasi">Izin Reklamasi</option>
+                <option value="amdal">Persetujuan Lingkungan (AMDAL / UKL-UPL)</option>
+                <option value="pbg">Pengurusan PBG</option>
+              </select>
+              <p class="error-message" data-for="service"></p>
+            </div>
+            <div class="form-field">
+              <label for="message">Ringkasan Kebutuhan</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                minlength="20"
+                required
+              ></textarea>
+              <p class="error-message" data-for="message"></p>
+            </div>
+            <button class="cta" type="submit">Kirim Permintaan</button>
+            <p class="form-feedback" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+
+      <section class="faq" id="faq" aria-labelledby="faq-title">
+        <div class="container reveal">
+          <h2 id="faq-title">Pertanyaan yang Sering Diajukan</h2>
+          <div class="faq-list">
+            <article class="faq-item">
+              <button aria-expanded="false">
+                Berapa lama proses PKKPRL biasanya berlangsung?
+              </button>
+              <div class="faq-content">
+                <p>
+                  Rata-rata pengajuan PKKPRL kami selesaikan dalam 8-12 minggu, termasuk
+                  sinkronisasi data spasial, konsultasi publik, dan review lintas
+                  instansi.
+                </p>
+              </div>
+            </article>
+            <article class="faq-item">
+              <button aria-expanded="false">
+                Apakah Nusantara EcoSphere dapat membantu review dokumen AMDAL yang
+                sudah berjalan?
+              </button>
+              <div class="faq-content">
+                <p>
+                  Ya. Kami melakukan audit kesiapan dokumen dan memberikan rekomendasi
+                  perbaikan untuk memastikan kelengkapan sebelum sidang komisi.
+                </p>
+              </div>
+            </article>
+            <article class="faq-item">
+              <button aria-expanded="false">
+                Bisakah tim mendampingi koordinasi dengan pemerintah daerah?
+              </button>
+              <div class="faq-content">
+                <p>
+                  Kami mendampingi rapat koordinasi, penyusunan berita acara, serta
+                  pemantauan tindak lanjut hingga dokumen persetujuan terbit.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="newsletter" aria-labelledby="newsletter-title">
+        <div class="container reveal">
+          <div class="newsletter-inner">
+            <div>
+              <h2 id="newsletter-title">Dapatkan Insight Regulasi Terbaru</h2>
+              <p>
+                Berlangganan buletin bulanan kami untuk menerima pembaruan regulasi dan
+                panduan praktis pengelolaan lingkungan.
+              </p>
+            </div>
+            <form class="newsletter-form" novalidate>
+              <label class="sr-only" for="newsletter-email">Email</label>
+              <input
+                id="newsletter-email"
+                type="email"
+                name="newsletter-email"
+                placeholder="nama@perusahaan.co.id"
+                required
+              />
+              <button type="submit">Langganan</button>
+              <p class="newsletter-feedback" role="status" aria-live="polite"></p>
+            </form>
+          </div>
         </div>
       </section>
     </main>
 
-    <footer class="site-footer" id="contact">
-      <div class="container footer-top">
+    <footer class="site-footer" id="footer">
+      <div class="container footer-inner">
         <div class="footer-brand">
-          <span class="brand-mark">U</span>
-          <span class="brand-name">Urbahn Architects</span>
+          <span class="brand-mark">N</span>
+          <span class="brand-name">Nusantara EcoSphere</span>
         </div>
         <nav aria-label="Footer">
           <ul class="footer-nav">
@@ -224,30 +472,30 @@
             <li><a href="#projects">Projects</a></li>
             <li><a href="#news">News</a></li>
             <li><a href="#contact">Contact</a></li>
-            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#faq">FAQ</a></li>
           </ul>
         </nav>
         <div class="footer-contact">
-          <h2>Contact</h2>
-          <ul>
-            <li>New York, NY · +1 (212) 555-0112</li>
-            <li>Newark, NJ · +1 (973) 555-0146</li>
-            <li>Jakarta, Indonesia · +62 21 555 0108</li>
-          </ul>
+          <p>Batam · +62 812-8855-3348</p>
+          <p><a href="mailto:hello@nusantaraecosphere.id">hello@nusantaraecosphere.id</a></p>
         </div>
-        <div class="footer-social">
-          <h2>Connect</h2>
-          <ul class="social-list">
-            <li><a href="#" aria-label="Facebook">Fb</a></li>
-            <li><a href="#" aria-label="Instagram">Ig</a></li>
-            <li><a href="#" aria-label="LinkedIn">Ln</a></li>
-            <li><a href="#" aria-label="YouTube">Yt</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>© 2025 Urbahn Architects. All rights reserved.</p>
+        <p class="footer-copy">© 2025 Nusantara EcoSphere. Seluruh hak cipta.</p>
       </div>
     </footer>
+
+    <a
+      class="floating-whatsapp"
+      href="https://wa.me/6281288553348"
+      target="_blank"
+      rel="noopener"
+      aria-label="Hubungi Nusantara EcoSphere via WhatsApp"
+    >
+      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <path
+          d="M12 2.04c-5.51 0-9.96 4.45-9.96 9.96 0 1.76.46 3.48 1.33 5.01L2 22l5.16-1.35a9.93 9.93 0 0 0 4.84 1.23h.01c5.51 0 9.96-4.45 9.96-9.96 0-2.66-1.03-5.16-2.9-7.04a9.93 9.93 0 0 0-7.07-2.84zm5.74 14.54c-.24.67-1.4 1.27-1.96 1.32-.5.05-1.11.07-1.79-.11-.41-.11-.94-.3-1.62-.59-2.86-1.23-4.72-4.09-4.86-4.27-.14-.18-1.16-1.54-1.16-2.94 0-1.4.74-2.07 1-2.35.27-.28.59-.35.79-.35.2 0 .4 0 .58.01.18.01.43-.07.67.51.24.59.82 2.05.89 2.2.07.14.12.31.02.49-.09.18-.14.31-.27.47-.14.16-.29.36-.41.49-.14.14-.29.29-.12.57.16.27.72 1.18 1.55 1.91 1.07.95 1.97 1.26 2.25 1.4.29.14.45.12.61-.07.16-.18.7-.81.89-1.09.18-.27.38-.23.63-.14.24.09 1.54.73 1.8.86.27.14.45.2.52.32.07.12.07.7-.17 1.37z"
+          fill="currentColor"
+        />
+      </svg>
+    </a>
   </body>
 </html>
